@@ -2,7 +2,7 @@
 title: "Proposal"
 weight: 1
 chapter: false
-pre: " <b> 1.1 </b> "
+pre: " <b> 2.1 </b> "
 ---
 
 # SorcererXStreme: An AI-Powered Metaphysical Guidance Platform
