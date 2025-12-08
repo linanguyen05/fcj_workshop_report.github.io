@@ -1,125 +1,74 @@
 ---
 title: "Event 2"
-date: "2025-09-08"
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### AI-Driven Development Workshop – Shaping the Future of Development
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+**Diễn giả chính:** Anh Toan Huynh & Chị My Nguyen
 
-### Mục Đích Của Sự Kiện
+**Đội ngũ điều phối:** Diem My, Dai Truong, Dinh Nguyen
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Mục tiêu chuyên môn
+Sự kiện tập trung vào việc định hình lại tư duy lập trình trong kỷ nguyên mới, với các mục tiêu cốt lõi:
+- **Cập nhật xu hướng công nghệ:** Phân tích sự chuyển dịch từ lập trình thủ công sang mô hình Phát triển do AI điều phối (AI-Driven Development - AI-DD).
+- **Giới thiệu Framework:** Ra mắt mô hình vòng đời phát triển AI-DLC, đặt nền móng cho việc tích hợp trí tuệ nhân tạo vào từng điểm chạm của quy trình CI/CD.
+- **Thực nghiệm công cụ:** Demo chuyên sâu khả năng của Amazon Q Developer và Kiro IDE Extension trong môi trường production.
+- **Tối ưu hóa quy trình:** Minh chứng cách AI giải quyết bài toán cân bằng giữa Tốc độ (Velocity), Chất lượng (Quality) và Năng suất (Productivity).
+- **Định hướng nghề nghiệp:** Xác định lại vị thế và kỹ năng cần thiết của kỹ sư phần mềm khi AI trở thành cộng sự cốt cán.
 
-### Danh Sách Diễn Giả
+### Nội dung chi tiết và Điểm nhấn kỹ thuật
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### 1. Tầm nhìn: Shaping the Future of Development
+Mở đầu hội thảo, diễn giả Toan Huynh đã khắc họa bức tranh toàn cảnh về kỷ nguyên **AI-Orchestrated Development**. Đây không đơn thuần là việc sử dụng công cụ hỗ trợ, mà là sự thay đổi hệ hình (paradigm shift), nơi AI chuyển từ vai trò "thợ phụ" sang vị trí trung tâm trong việc điều phối luồng công việc, từ khâu lên ý tưởng, thiết kế kiến trúc cho đến deployment.
 
-### Nội Dung Nổi Bật
+#### 2. Phân tích thực trạng và Sự ra đời của AI-Driven Development (AI-DD)
+Bài tham luận chỉ ra điểm nghẽn của các mô hình hiện tại (AI-Assisted/AI-Managed): sự thiếu ổn định trong output và khó khăn trong việc kiểm soát context (ngữ cảnh).
+Giải pháp được đưa ra là **AI-Driven Development (AI-DD)**. Đây là điểm cân bằng tối ưu, nơi tự động hóa được đẩy lên cao nhưng vẫn duy trì cơ chế "Human-in-the-loop" (con người trong vòng lặp) để đảm bảo tính chính xác và trách nhiệm giải trình.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### 3. Mô hình vòng đời phát triển AI (AI-DLC)
+Điểm nhấn lý thuyết quan trọng nhất là mô hình phân cấp sự tiến hóa của AI trong SDLC:
+- **Level 1 - AI-Assisted Development:** AI đóng vai trò như một "Smart Linter", hỗ trợ gợi ý code (autocomplete), refactor cơ bản và check cú pháp.
+- **Level 2 - AI-Driven Development (Trọng tâm):** AI tham gia sâu vào tầng chiến lược như thiết kế High-level Design, hoạch định tasks và hỗ trợ ra quyết định logic.
+- **Level 3 - AI-Managed Development:** Hướng tới các AI Agents tự hành, tự động thực thi quy trình phát triển dưới sự giám sát và phê duyệt cuối cùng của con người.
+Trong mô hình AI-DD, AI được ví như một "Technical Lead" ảo, còn Developer đóng vai trò người đánh giá và ra quyết định (Reviewer & Decision Maker).
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### 4. Bảy trụ cột lợi ích (The 7 Pillars of AI Benefits)
+Việc áp dụng AI-DD mang lại tác động đa chiều, được tóm gọn qua 7 từ khóa:
+* **Predictability:** Dự báo rủi ro và tiến độ chính xác hơn.
+* **Velocity:** Tăng tốc độ đưa sản phẩm ra thị trường (Time-to-market).
+* **Quality:** Giảm thiểu lỗi logic và bảo mật.
+* **Innovation:** Giải phóng nhân sự khỏi các tác vụ lặp lại để tập trung sáng tạo.
+* **Developer Engagement:** Giảm burnout, tăng hứng thú công việc.
+* **Customer Satisfaction:** Phản hồi nhanh với nhu cầu khách hàng.
+* **Productivity:** Tối ưu hóa hiệu suất tổng thể.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### 5. Tác động lên quy trình SDLC
+AI đang tái cấu trúc chuỗi giá trị phần mềm: *Explore & Plan → Create → Test & Secure → Review & Deploy → Maintain*. Đặc biệt, các nút thắt cổ chai truyền thống như viết Unit Test, Documentation, và Security Scanning được AI xử lý với tốc độ vượt trội, giúp quy trình mượt mà hơn (frictionless).
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### 6. Live Demo: Sức mạnh của Amazon Q và Kiro IDE
+Phiên demo thực tế đã chứng minh lý thuyết qua hai công cụ mạnh mẽ:
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+**Amazon Q Developer (Trợ lý chuyên biệt cho AWS):**
+- Tích hợp sâu vào IDE (VS Code, Cloud9), hoạt động như một chuyên gia AWS ngay bên cạnh.
+- Khả năng hiểu ngữ cảnh dự án để sinh code, tự động tạo Unit Test và viết tài liệu kỹ thuật.
+- Điểm ấn tượng: Hỗ trợ cập nhật `prompt.md` để tinh chỉnh ngữ cảnh và tự động hóa các pipeline CI/CD phức tạp.
 
-#### Domain-Driven Design (DDD)
+**Kiro IDE Extension (Trình bày bởi chị My Nguyen):**
+- Minh họa triết lý "Documentation as Code".
+- Quản lý dự án thông qua các file markdown đặc tả (`requirements.md`, `design.md`, `tasks.md`).
+- **Use-case:** Xây dựng ứng dụng Chat có tính năng Authentication. Chỉ từ các mô tả ngôn ngữ tự nhiên, AI đã thiết kế luồng API, sinh code backend và cấu trúc database một cách mạch lạc.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+### Trải nghiệm và Góc nhìn cá nhân
+Tham dự workshop này là một bước ngoặt trong tư duy nghề nghiệp của tôi. Thay vì chỉ tập trung vào việc viết đúng cú pháp (syntax) như trước đây, tôi nhận ra trọng tâm công việc đang dịch chuyển.
+- **Sự kinh ngạc về công nghệ:** Chứng kiến Amazon Q và Kiro IDE dựng lên bộ khung dự án hoàn chỉnh từ vài dòng prompt khiến tôi thực sự ấn tượng (wow factor). Nó cho thấy khoảng cách từ ý tưởng đến sản phẩm đang được rút ngắn chưa từng thấy.
+- **Giải tỏa tâm lý:** Những chia sẻ từ anh Toan Huynh đã giúp tôi gạt bỏ nỗi lo "AI thay thế lập trình viên". Thay vào đó, tôi nhìn thấy cơ hội để trở thành một "Super Developer" khi biết tận dụng đòn bẩy công nghệ.
+- **Ứng dụng ngay:** Tôi đã bắt đầu tích hợp Amazon Q vào quy trình debug hàng ngày và nhận thấy hiệu suất cải thiện rõ rệt, đặc biệt là trong việc giải thích các lỗi logic phức tạp.
 
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+### Bài học và Định hướng hành động
+Từ những kiến thức thu được, tôi rút ra ba bài học cốt tử cho lộ trình phát triển bản thân:
+1.  **Chuyển đổi vị thế - AI là Cộng sự:** Ngừng cạnh tranh với máy móc, thay vào đó tập trung rèn luyện kỹ năng **Prompt Engineering** và giao tiếp ngữ cảnh để tối ưu hóa đầu ra của AI.
+2.  **Tư duy Kiến trúc (Architectural Mindset) là vua:** Khi việc viết code (Implementation) trở nên dễ dàng nhờ AI, giá trị cốt lõi của kỹ sư phần mềm sẽ nằm ở khả năng Thiết kế hệ thống (System Design), Tư duy phản biện và Kiểm soát chất lượng (Quality Assurance).
+3.  **Thích ứng linh hoạt (Agility):** Mô hình AI-DLC không phải là tương lai xa mà là tiêu chuẩn hiện tại. Việc thành thạo các công cụ AI-native ngay bây giờ là chìa khóa để tạo lợi thế cạnh tranh trong thị trường lao động.

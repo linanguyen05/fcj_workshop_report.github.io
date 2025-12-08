@@ -6,42 +6,38 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Evaluation and Feedback on the Internship Program
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud Journey program. This will help the FCJ team improve any shortcomings based on the following aspects:
+## I. General Evaluation
 
-### Overall Evaluation
+### 1. Working Environment
+The working environment at **AWS First Cloud Journey (FCJ)** is genuinely open. More than just a workplace, FCJ feels like a miniature tech community. The workshops and networking sessions not only helped me update my knowledge but also provided opportunities to connect with experienced seniors in the field.
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+### 2. Mentor / Team Admin Support
+I am particularly impressed with the Mentor's guidance method. Instead of giving direct answers, the Mentor patiently listened to the team's workflow and ideas, then suggested various **options**. This approach not only helped us solve immediate problems but also broadened our perspectives, forcing us to think critically to select the optimal solution. Support from the Team Admin regarding documentation and processes was also very timely, allowing me to focus maximally on professional tasks.
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+### 3. Alignment with Major (AI vs. Cloud)
+As an AI major venturing into Cloud, I initially faced quite a few barriers. However, the system of documentation, practical Labs, and detailed video tutorials provided by the program helped me catch up quickly. The project work helped me realize the symbiotic relationship between AI and Cloud: Cloud provides the infrastructure for AI to scale, and AI brings intelligent value to applications on the Cloud.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+### 4. Learning & Skill Development
+The biggest highlight in my learning process was the 3-session **AWS Cloud Mastery Series**. Although these sessions took place when our team's project was in its final stages, the knowledge gained here helped us optimize our architecture and reduce operating costs by **4-5 times** compared to the original design. This was a real-world lesson in Cost Optimization that is hard to learn from books alone.
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
-
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
-
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+### 5. Culture & Team Spirit
+The culture of respect and straightforwardness helped our team overcome initial phases of conflict to coordinate more smoothly. Everyone was ready to share difficulties and support each other's tasks to reach the finish line together.
 
 ---
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+## II. Survey & Proposals
+
+### 1. What did you like most about this internship program?
+What I like most is the harmonious combination of learning and practical application. The program not only provides foundational knowledge but also creates opportunities to apply it immediately to real projects with close guidance from Mentors. This helped me not only understand the theory but also know how to apply it in a corporate environment.
+
+### 2. What do you think the company needs to improve?
+Although the training program is excellent, I noticed there isn't much in-depth orientation content for those switching majors (e.g., a specific roadmap for AI/Data students wanting to specialize as Cloud Architects). If there were additional sessions sharing about **Career Paths**, I think it would be very useful for future cohorts.
+
+### 3. Proposals & Desires
+* **Regarding the product:** I am well aware that the SorcererXtreme project is not yet perfect (security is not yet tight, some edge cases haven't been handled). I hope to have the opportunity to continue receiving reviews and feedback from Mentors to refine this product even after the internship has ended.
 
 ---
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+Finally, I would like to send my sincere thanks to the entire FCJ team for creating such a meaningful and beneficial internship program. This internship not only helped me develop professional skills but also expanded my vision regarding my future career path. I look forward to continuing to accompany and develop with AWS in the journey ahead.

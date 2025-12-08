@@ -1,126 +1,74 @@
 ---
 title: "Event 2"
-date: "2025-09-08"
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+### AI-Driven Development Workshop – Shaping the Future of Development
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+**Keynote Speakers:** Mr. Toan Huynh & Ms. My Nguyen
 
-### Event Objectives
+**Coordinators:** Diem My, Dai Truong, Dinh Nguyen
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+### Professional Objectives
+The event focused on reshaping the engineering mindset in the new era, with core objectives including:
+- **Tech Trend Update:** Analyzing the paradigm shift from manual coding to AI-Orchestrated Development (AI-Driven Development - AI-DD).
+- **Framework Introduction:** Launching the AI-Driven Development Lifecycle (AI-DLC), laying the foundation for integrating Artificial Intelligence into every touchpoint of the CI/CD pipeline.
+- **Tool Demonstration:** In-depth demo of Amazon Q Developer and Kiro IDE Extension capabilities in a production environment.
+- **Process Optimization:** Demonstrating how AI resolves the "Iron Triangle" trade-off between Velocity, Quality, and Productivity.
+- **Career Orientation:** Redefining the position and essential skills of software engineers as AI becomes a core collaborator.
 
-### Speakers
+### Detailed Content & Technical Highlights
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+#### 1. Vision: Shaping the Future of Development
+Opening the workshop, speaker Toan Huynh depicted the landscape of the **AI-Orchestrated Development** era. This is not merely about using assistive tools, but a fundamental paradigm shift where AI transitions from a "junior assistant" to a central role in orchestrating workflows—from ideation and architectural design to deployment.
 
-### Key Highlights
+#### 2. Current State Analysis & The Rise of AI-Driven Development (AI-DD)
+The keynote addressed the bottlenecks of current models (AI-Assisted/AI-Managed): instability in outputs and difficulties in context control.
+The proposed solution is **AI-Driven Development (AI-DD)**. This represents an optimal balance where automation is maximized while maintaining a "Human-in-the-loop" mechanism to ensure accuracy and accountability.
 
-#### Identifying the drawbacks of legacy application architecture
+#### 3. AI Development Lifecycle (AI-DLC) Model
+The critical theoretical highlight was the evolutionary hierarchy of AI in the SDLC:
+- **Level 1 - AI-Assisted Development:** AI acts as a "Smart Linter," supporting autocomplete, basic refactoring, and syntax checking.
+- **Level 2 - AI-Driven Development (Core Focus):** AI engages deeply in the strategic layer, such as High-level Design, task planning, and logical decision support.
+- **Level 3 - AI-Managed Development:** Aiming towards autonomous AI Agents that execute development processes under human supervision and final approval.
+In the AI-DD model, AI acts as a virtual "Technical Lead," while the Developer plays the role of Reviewer & Decision Maker.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### 4. The 7 Pillars of AI Benefits
+Adopting AI-DD delivers multi-dimensional impacts, summarized by 7 keywords:
+* **Predictability:** More accurate risk and timeline forecasting.
+* **Velocity:** Accelerated Time-to-market.
+* **Quality:** Mitigation of logical errors and security vulnerabilities.
+* **Innovation:** Freeing personnel from repetitive tasks to focus on creativity.
+* **Developer Engagement:** Reducing burnout, increasing job satisfaction.
+* **Customer Satisfaction:** Rapid response to customer needs.
+* **Productivity:** Optimizing overall performance.
 
-#### Transitioning to modern application architecture – Microservices
+#### 5. Impact on the SDLC
+AI is restructuring the software value chain: *Explore & Plan → Create → Test & Secure → Review & Deploy → Maintain*. Notably, traditional bottlenecks like Unit Testing, Documentation, and Security Scanning are handled by AI with superior speed, resulting in a frictionless process.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### 6. Live Demo: The Power of Amazon Q and Kiro IDE
+The practical session validated the theory through two powerful tools:
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+**Amazon Q Developer (AWS Specialized Assistant):**
+- Deeply integrated into the IDE (VS Code, Cloud9), acting as an AWS expert right at your fingertips.
+- Context-aware capability to generate code, automatically create Unit Tests, and write technical documentation.
+- **Highlight:** Support for updating `prompt.md` to refine context and automate complex CI/CD pipelines.
 
-#### Domain-Driven Design (DDD)
+**Kiro IDE Extension (Presented by Ms. My Nguyen):**
+- Illustrated the "Documentation as Code" philosophy.
+- Project management via markdown specification files (`requirements.md`, `design.md`, `tasks.md`).
+- **Use-case:** Building a Chat application with Authentication. From natural language descriptions alone, AI designed the API flow, generated backend code, and structured the database coherently.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+### Personal Experience & Perspective
+Attending this workshop was a turning point in my professional mindset. Instead of focusing solely on syntax as before, I realized the focus of work is shifting.
+- **Technological Awe:** Witnessing Amazon Q and Kiro IDE construct a complete project framework from a few prompt lines was truly impressive (the "wow factor"). It demonstrated that the distance from idea to product is being shortened like never before.
+- **Psychological Relief:** Insights from Mr. Toan Huynh helped me dispel the fear of "AI replacing developers." Instead, I see the opportunity to become a "Super Developer" by leveraging technology.
+- **Immediate Application:** I have started integrating Amazon Q into my daily debugging process and noticed a distinct improvement in efficiency, especially in explaining complex logical errors.
 
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+### Key Takeaways & Action Plan
+From the knowledge gained, I have drawn three vital lessons for my development roadmap:
+1.  **Shift in Stance - AI as a Partner:** Stop competing with machines; instead, focus on honing **Prompt Engineering** and context communication skills to optimize AI output.
+2.  **Architectural Mindset is King:** As implementation becomes easier thanks to AI, the core value of a software engineer will lie in System Design capabilities, Critical Thinking, and Quality Assurance.
+3.  **Agility:** The AI-DLC model is not a distant future but the current standard. Mastering AI-native tools now is the key to creating a competitive advantage in the labor market.

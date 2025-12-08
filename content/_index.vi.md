@@ -17,13 +17,11 @@ chapter: false
 
 &emsp; **Ngành:** Tri tuệ nhân tạo
 
-&emsp; **Lớp:** AWS082025 ?
-
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 09/12/2025
 
 ![Ảnh đại diện của bạn](/images/avatar.png)
 

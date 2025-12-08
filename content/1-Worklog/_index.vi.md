@@ -21,13 +21,13 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 5:** [Làm công việc D...](1.5-week5/)
 
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
+**Tuần 6:** [Quản trị An ninh & Khả năng phục hồi dữ liệu](1.6-week6/)
 
 **Tuần 7:** [Làm công việc G...](1.7-week7/)
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 8:** [TỰ ĐỘNG HÓA DEVOPS (CI/CD), XÂY DỰNG DATA LAKE & ĐÁNH GIÁ NĂNG LỰC GIỮA KỲ](1.8-week8/)
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
+**Tuần 9:** [Xây dựng Data Analytics Pipeline với S3, Glue, QuickSight và tối ưu chi phí với Cost Explorer, Savings Plans](1.9-week9/)
 
 **Tuần 10:** [Làm công việc L...](1.10-week10/)
 

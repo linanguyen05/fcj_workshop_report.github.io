@@ -36,6 +36,3 @@ pre: " <b> 1.5. </b> "
 ### Bài học rút ra:
 * Trong môi trường Cloud, bảo mật không chỉ là chặn IP. Việc quản lý định danh (IAM Role) cấp quyền cho máy chủ và dịch vụ (Service-to-Service) mới là cốt lõi, thay thế cho tư duy mở port truyền thống.
 * Áp dụng bảo mật chiều sâu: Network (VPC/SG) -> Application (WAF) -> Data (KMS). Ngay cả khi file S3 bị lộ đường dẫn (Public), kẻ tấn công vẫn không thể đọc nội dung nếu không có Key giải mã.
-
-
-hong them mi cay
