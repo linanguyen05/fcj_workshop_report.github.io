@@ -2,7 +2,7 @@
 title: "Đề Án"
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 1.1 </b> "
 ---
 
 # SorcererXStreme: Nền tảng Luận giải Ứng dụng AI
