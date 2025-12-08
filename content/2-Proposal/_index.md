@@ -23,7 +23,7 @@ pre: " <b> 2. </b> "
 
 | Photo| Role | Full Name | Major | Contact |
 | :---:| :---: | :--- | :--- | :--- |
-|<img src="/images/PHuyen.png" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | **Leader** | Tran Phuong Huyen | Software Engineering | tranphuonghuyen2005@gmail.com |
-|<img src="/images/LamAnh.jpg" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | AI | Nguyen Lam Anh | Artifical Intelligent | nguyenla110505@gmail.com |
-|<img src="/images/VanLinh.jpg" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | AI | Nguyen Van Linh | Artifical Intelligent | nguyenvanlinh.1710.it@gmail.com |
-|<img src="/images/TanKhang.jpg" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | SE | Bui Nguyen Tan Khang | Software Engineering | tankhang6a6@gmail.com |
+|<img src="/25FALL/OJT/report/static/images/PHuyen.png" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | **Leader** | Tran Phuong Huyen | Software Engineering | tranphuonghuyen2005@gmail.com |
+|<img src="/25FALL/OJT/report/static/images/LamAnh.jpg" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | AI | Nguyen Lam Anh | Artifical Intelligent | nguyenla110505@gmail.com |
+|<img src="/25FALL/OJT/report/static/images/VanLinh.jpg" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | AI | Nguyen Van Linh | Artifical Intelligent | nguyenvanlinh.1710.it@gmail.com |
+|<img src="/25FALL/OJT/report/static/images/TanKhang.jpg" class="img-responsive" style="max-width:300px; display:block; margin:auto;"> | SE | Bui Nguyen Tan Khang | Software Engineering | tankhang6a6@gmail.com |
