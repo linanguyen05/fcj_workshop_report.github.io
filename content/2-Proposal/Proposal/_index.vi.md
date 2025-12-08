@@ -1,5 +1,6 @@
 ---
 title: "Đề Án"
+date: "2025-09-08"
 weight: 1
 chapter: false
 pre: " <b> 2.1. </b> "
