@@ -8,46 +8,48 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+  * Socialize and connect with members; get accustomed to the learning environment at First Cloud Journey.
+  * Understand and grasp the basic AWS services.
+  * Practice the steps to initialize and configure an AWS Free Tier account.
+  * Begin familiarizing with the AWS Management Console and AWS CLI.
+  * Learn about Amazon VPC and basic networking components.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to Implement This Week:
 
+| Day | Task | Start Date | End Date | Source |
+| :--- | :--- | :--- | :--- | :--- |
+| Mon | - Get to know FCJ members.<br>- Read and note the rules and regulations at the internship organization. | 09/08/2025 | 09/08/2025 | |
+| Tue | - Create AWS Free Tier account.<br>- Research AWS and an overview of service groups:<br>  + Compute<br>  + Storage<br>  + Networking<br>  + Database<br>  + Monitoring<br>  + Cost Management | 09/09/2025 | 09/09/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Wed | - Set up MFA for root user and admin user.<br>- Familiarize with AWS Management Console (EC2, S3, RDS, Lambda, CloudWatch).<br>- Learn about AWS Budget.<br>- **Practice:**<br>  + Set up MFA (Multi-factor Authentication).<br>  + Create Admin Group and Admin User to replace root for managing AWS resources.<br>  + Create Cost Budget, Usage Budget, RI Budget, Savings Plans Budget. | 09/10/2025 | 09/10/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Thu | - Research AWS Support and support plans:<br>  + Basic Plan<br>  + Developer Plan<br>  + Business Plan<br>  + Enterprise Plan<br>- Learn access management with IAM.<br>- **Practice:**<br>  + Create and manage IAM Groups, IAM Users.<br>  + Implement IAM Roles with temporary permissions.<br>- Learn about Elastic IP. | 09/11/2025 | 09/11/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Fri | - Learn Amazon VPC overview.<br>- Grasp concepts: CIDR, Subnet, Route Table, Internet Gateway, NAT Gateway.<br>- Learn overview of firewalls in Amazon VPC. | 09/12/2025 | 09/12/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
 
-### Week 1 Achievements:
+### Results Achieved in Week 1:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+  * Understood what AWS is and grasped the basic service groups:
+      * Compute
+      * Storage
+      * Networking
+      * Database
+  * Successfully set up a secure AWS Free Tier account with MFA and standard IAM configuration.
+  * Familiarized with the AWS Management Console; know how to search, access, and use services via the web interface.
+  * Know how to contact and create cases on AWS Support.
+  * Understood the theoretical architecture of AWS VPC networking and the roles of basic components.
 
-* Successfully created and configured an AWS Free Tier account.
+### Challenges – Solutions:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+  * **Challenge:** Initial difficulty in distinguishing between the root user and IAM user.
+      * **Solution:** Practiced creating an Admin Group and Admin User to replace the root user for managing AWS resources.
+  * **Challenge:** Some concepts like CIDR, Subnet, Internet Gateway, NAT Gateway, RI, and Savings Plans were new.
+      * **Solution:** Consulted documentation and took notes for better memorization and deeper understanding.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Lessons Learned:
 
-* Used AWS CLI to perform basic operations such as:
+  * Do not use the root user for normal tasks to ensure AWS account safety; always enable MFA for the root user and important IAM users.
+  * Proactively manage costs and set clear alert thresholds.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+### Plan for Next Week:
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+  * Practice deploying Amazon VPC.
+  * Practice deploying EC2 instances and connecting with S3.
+  * Continue expanding networking knowledge with VPC Peering and Security Groups.

@@ -5,53 +5,47 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
+  * Practice deploying basic network and compute infrastructure.
+  * Deploy Amazon VPC with full architecture (Public & Private Subnets, attach Internet Gateway, configure Route Tables, Security Groups, NAT Gateway).
+  * Deploy Amazon EC2 Instances (Linux & Windows), connect via SSH and RDP.
+  * Practice "least privilege" security principles in Security Groups.
+  * Practice deploying a Node.js User Management application on Amazon Windows Server 2022.
+  * Hone AWS cost management skills and resource cleanup after each lab.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks to Implement This Week:
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | End Date | Source |
+| :--- | :--- | :--- | :--- | :--- |
+| Mon | - Review Amazon VPC theory.<br>- Research Amazon EC2 Instances theory.<br>- **Practice:**<br>  + Create VPC with CIDR 10.10.0.0/16 and configure DNS.<br>  + Create Subnets and enable Auto-assign IP for Public Subnet.<br>  + Create Internet Gateway and attach to VPC.<br>  + Create Public Route Table, configure route 0.0.0.0/0 → IGW.<br>  + Create Security Group for Public Subnet (SSH, ICMP).<br>  + Create Security Group for Private Subnet (SSH from Public SG).<br>  + Create Security Group for VPC Endpoint (Internal HTTPS). | 15/09/2025 | 15/09/2025 | |
+| Tue | - Deploy Amazon EC2 Instances:<br>  + Create EC2 Instances in Public Subnet and Private Subnet.<br>  + SSH Connection: local → EC2 Public → EC2 Private (via private IP).<br>  + Work with key pairs (aws-keypair.pem/.ppk) via PuTTY, pscp, chmod 400 to connect to EC2 servers.<br>  + Test Internet ping from Public EC2 and Private EC2 instances.<br>  + Create Elastic IP and NAT Gateway in public subnet to allow instances in private subnet to connect to the internet. | 16/09/2025 | 16/09/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Wed | - **Practice:**<br>  + Launch EC2 Windows Server 2022.<br>  + Connect to Windows instance on AWS EC2 via RDP.<br>  + Launch Amazon Linux 2 instance.<br>  + Connect to EC2 Linux instance using MobaXterm and PuTTY. | 17/09/2025 | 17/09/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Thu | - Learn basic Amazon EC2 and practice basic tasks like changing configuration, creating snapshots, building custom AMIs, and accessing when key pair is lost. | 18/09/2025 | 18/09/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Fri | - Learn theory on deploying AWS User Management Node.js application on Amazon Linux.<br>- **Practice:**<br>  + Install XAMPP (Apache + MySQL) on Windows Server 2022.<br>  + Create database and user table via phpMyAdmin interface.<br>  + Install Node.js + Git on Windows instance.<br>  + Clone code repo, npm init, install dependencies.<br>  + Create .env file for DB config, use Nodemon and npm start to run app and save time. | 19/09/2025 | 19/09/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
 
+### Results Achieved in Week 2:
 
-### Week 2 Achievements:
+  * Completed VPC network architecture with Subnets, IGW, Route Tables.
+  * Created full SGs for Public, Private, and VPC Endpoint.
+  * Private EC2 successfully pinged Internet (via NAT Gateway).
+  * EC2 Linux: Deployed Public & Private EC2, successful SSH connection.
+  * EC2 Windows: Launched, successful RDP connection.
+  * Installed XAMPP, Node.js, successfully deployed CRUD User Management app.
+  * Managed AWS costs, cleaned up resources after each lab.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Challenges – Solutions:
 
-* Successfully created and configured an AWS Free Tier account.
+  * **Challenge:** EC2 Private could not ping Internet.
+      * **Solution:** Created NAT Gateway + Private Route Table.
+  * **Challenge:** SSH connection error to EC2 Private.
+      * **Solution:** Checked Security Group, Route Table, NAT Gateway, SSH via EC2 Public (bastion host).
+  * **Challenge:** RDP Windows password/decrypt error.
+      * **Solution:** IP changes every time instance stops/starts, downloaded new remote desktop file. Decrypt password using .pem key pair, re-checked port 3389 rule in SG.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+### Lessons Learned:
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+  * Adhere to "least privilege" security principles in Security Groups configuration.
+  * Understand Public vs Private Subnets, NAT Gateway mechanism.
+  * Master basic operations with EC2: changing configuration, creating snapshots, building custom AMIs, accessing when key pair is lost.
+  * Know how to RDP to manage Windows Server on AWS EC2 and SSH to manage Linux Server on AWS EC2.

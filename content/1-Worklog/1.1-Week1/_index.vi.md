@@ -14,7 +14,7 @@ pre: " <b> 1.1. </b> "
 * Tìm hiểu về Amazon VPC và các thành phần mạng cơ bản.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| Thứ | Công việc       | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | 2   | - Làm quen với các thành viên FCJ. <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập.                                                                                             | 08/09/2025   | 08/09/2025      |
 | 3   | - Tạo AWS Free Tier account. <br> - Tìm hiểu AWS và tổng quan về các nhóm dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + Monitoring <br>&emsp; + Quản lý chi phí <br>                                            | 09/09/2025   | 09/09/2025      | <https://cloudjourney.awsstudygroup.com/> |

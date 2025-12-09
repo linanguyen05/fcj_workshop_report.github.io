@@ -1,5 +1,5 @@
 ---
-title: "Proposal"
+title: "Proposal Overview"
 date: "2025-09-08"
 weight: 1
 chapter: false

@@ -45,7 +45,7 @@ SorcererXStreme AI cung cấp một nền tảng thống nhất, trực quan và
 
 Nền tảng SorcererXStreme sử dụng kiến trúc hybrid serverless trên AWS, được thiết kế tỉ mỉ để xử lý các tương tác người dùng theo thời gian thực, các tác vụ theo lịch trình và giám sát tự động. Thiết kế toàn diện này đảm bảo tính toán chuyên biệt, khả năng mở rộng cao và bảo mật nghiêm ngặt trên tất cả các luồng chức năng.
 
-![Sơ đồ kiến trúc](/25FALL/OJT/report/static/images/High_Level_System_Architecture.drawio.png)
+![Sơ đồ kiến trúc](/images/High_Level_System_Architecture.drawio.png)
 
 
 ### Dịch vụ sử dụng
