@@ -43,7 +43,7 @@ The most crucial part, where the RAG logic is established to deliver intelligent
 
 #### Content
 
-1. [Workshop overview](2.1-Workshop-overview)
-2. [Frontend Development](2.2-Frontend-Development/)
-3. [Backend Development](2.3-Backend-Development/)
-4. [AI Development](2.4-AI-Development/)
+1. [Workshop overview](5.1-Workshop-overview)
+2. [Frontend Development](5.2-Frontend-Development/)
+3. [Backend Development](5.3-Backend-Development/)
+4. [AI Development](5.4-AI-Development/)
