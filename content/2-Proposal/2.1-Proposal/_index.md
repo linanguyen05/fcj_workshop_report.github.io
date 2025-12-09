@@ -46,7 +46,7 @@ SorcererXStreme AI offers a unified, intuitive, and intelligent platform:
 
 The SorcererXStreme AI platform utilizes a robust, hybrid serverless architecture on AWS, meticulously designed to handle real-time user interactions, scheduled tasks, and autonomous monitoring.
 
-![Architecture Diagram](/25FALL/OJT/report/static/images/High_Level_System_Architecture.drawio.png)
+![Architecture Diagram](/images/High_Level_System_Architecture.drawio.png)
 
 ## Services Used
 
