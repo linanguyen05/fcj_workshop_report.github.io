@@ -1,33 +1,49 @@
 ---
 title: "Workshop"
-date: "2025-09-08"
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
----
+--- 
+# SorcererXtreme: Xây dựng Nền tảng luận giải dựa trên AI trên AWS
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Tổng quan
+
+SorcererXtreme AI là một nền tảng hướng dẫn siêu hình tiên phong, tận dụng AI và kiến trúc Serverless của AWS để cung cấp các bài đọc cá nhân hóa, có cơ sở và đáng tin cậy về Chiêm tinh học, Tarot, Tử vi và Số học.
+
+### 1. Phát triển Frontend 
+
+Phần này tập trung vào việc xây dựng giao diện người dùng React/Next.js và tích hợp với AWS Amplify.
+
+| Mục tiêu | Công nghệ & Khái niệm | Sản phẩm Đầu ra |
+| :--- | :--- | :--- |
+| **Giao diện & UX** | Xây dựng các component chính (Chat UI, Profile Settings, Payment Gateways). | Giao diện người dùng trực quan, responsive cho các dịch vụ: Tarot Reading, Astrology Chart. |
+| **Xác thực** | Tích hợp AWS Cognito và Amplify Authenticator vào Frontend. | Hệ thống đăng nhập/đăng ký hoạt động đầy đủ. |
+| **Tích hợp Backend** | Viết các hàm Client-side API calls (`axios`) để gọi đến API Gateway Endpoint (Backend). | Các hàm Fetch data/Post requests hoạt động, hiển thị dữ liệu (Response) từ Lambda. |
 
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+### 2. Phát triển Backend 
 
-#### Tổng quan
+Đây là phần cốt lõi của kiến trúc Serverless, tập trung vào logic nghiệp vụ và tối ưu hóa hiệu suất.
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+| Mục tiêu | Công nghệ & Khái niệm | Sản phẩm Đầu ra |
+| :--- | :--- | :--- |
+| **Lớp API & DB** | Thiết lập Express.js và **`serverless-http`** trên AWS Lambda. Cấu hình Prisma và kết nối an toàn với NeonDB. | Các hàm Lambda cơ bản hoạt động: `UserAPI` (CRUD hồ sơ) và `ReminderService`. |
+| **Kiến trúc Asynchronous** | Xây dựng luồng Reminder Service bằng EventBridge Scheduler và Amazon SES. | Logic `findUsersToRemind` hoạt động và tự động gửi email thông báo.  |
+| **Tối ưu hóa** | Tối ưu gói triển khai Serverless/Prisma, và thiết lập IAM Roles tối thiểu. | Mã nguồn Backend được triển khai tự động qua GitHub Actions (CI/CD). |
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+### 4. Phát triển AI 
+Phần quan trọng nhất, nơi logic RAG được thiết lập để cung cấp nội dung thông minh.
 
-#### Nội dung
+| Mục tiêu | Công nghệ & Khái niệm | Sản phẩm Đầu ra |
+| :--- | :--- | :--- |
+| **Lõi RAG** | Hiểu và thiết lập luồng Retrieval-Augmented Generation (RAG). | Kiến trúc RAG hoạt động. |
+| **Bedrock & Embeddings** | Sử dụng Amazon Bedrock để tạo Vector Embeddings từ câu hỏi của người dùng và gọi các LLMs. | Hàm Lambda (`ChatbotAPI`) gọi thành công Bedrock để tạo sinh câu trả lời. |
+| **Truy xuất Dữ liệu** | Sử dụng Pinecone làm Vector Database để lưu trữ và truy xuất các Chunk kiến thức từ kho tri thức RAG (lưu trữ trong S3). | Quá trình tìm kiếm ngữ cảnh (context retrieval) và truyền ngữ cảnh đó vào Prompt để tạo sinh câu trả lời chính xác. |
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+### Nội dung
+
+1.  [Tổng quan về Workshop](5.1-Workshop-overview)
+2.  [Phát triển Frontend](5.2-Frontend-Development/)
+3.  [Phát triển Backend](5.3-Backend-Development/)
+4.  [Phát triển AI](5.4-AI-Development/)

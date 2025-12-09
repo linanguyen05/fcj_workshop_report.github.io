@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
 # Summary Report: “GenAI-powered App-DB Modernization workshop”
 
 ### Event Objectives
@@ -119,8 +115,5 @@ Attending the **“GenAI-powered App-DB Modernization”** workshop was extremel
 - Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
 - Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
 - AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

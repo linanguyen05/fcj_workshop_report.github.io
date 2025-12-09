@@ -86,6 +86,4 @@ Các vị CEO từ ELSA, Nexttech và TymeX đã chia sẻ góc nhìn thực ti�
 - GenAI và AI Agents sẽ tái cấu trúc cách thức vận hành doanh nghiệp, từ tự động hóa đơn giản đến việc hỗ trợ quyết định, tối ưu quy trình, tăng năng suất vượt bậc.
 - AWS cung cấp một hệ sinh thái toàn diện: từ hạ tầng, quản lý dữ liệu, bảo mật đến các dịch vụ AI/ML, hỗ trợ đồng hành cùng doanh nghiệp trong suốt hành trình chuyển đổi số.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
 > Tổng thể, sự kiện Vietnam Cloud Day 2025 mang lại cái nhìn toàn diện về cách AWS định hình tương lai Cloud & AI tại Việt Nam, vừa có tầm chiến lược lãnh đạo, vừa có chiều sâu kỹ thuật cho builder. Đây là cơ hội quý giá để cập nhật, học hỏi và định hướng cho các dự án sắp tới.

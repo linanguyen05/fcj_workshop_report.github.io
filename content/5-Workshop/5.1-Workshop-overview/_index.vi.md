@@ -1,19 +1,31 @@
 ---
 title : "Giới thiệu"
-date :  "2025-09-08" 
-weight : 1
+weight : 1 
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+## SorcererXtreme AI: Xây dựng Nền tảng Luận giải Dựa trên AI trên AWS
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+Mục đích cốt lõi của dự án này, đối với một workshop dành cho nhà phát triển, là để minh họa cách xây dựng một ứng dụng đa diện, có khả năng mở rộng, tối ưu chi phí, có khả năng xử lý các luồng dữ liệu phức tạp hoàn toàn trong môi trường đám mây.
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+### Vấn đề được giải quyết & Giá trị Kỹ thuật
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+  * **Thách thức:** Xây dựng một nền tảng kết hợp nhu cầu tính toán chính xác với sự sáng tạo ngôn ngữ của AI, đồng thời đảm bảo tất cả nội dung đều có thể kiểm chứng và có cơ sở. Các giải pháp dựa trên máy chủ truyền thống thường gặp khó khăn với khả năng mở rộng động cần thiết cho các khối lượng công việc đa dạng như vậy.
+  * **Giải pháp Kỹ thuật:** Chúng tôi giải quyết vấn đề này bằng cách triển khai Lõi Retrieval-Augmented Generation (RAG) sử dụng Amazon Bedrock và Pinecone. Thiết kế này cho phép AI tạo ra các câu trả lời đã được xác minh dựa trên cơ sở kiến thức chuyên biệt, biến hướng dẫn mang tính suy đoán thành những hiểu biết sâu sắc có thể hành động.
+
+### Điểm nổi bật Kỹ thuật Chính
+
+Dự án này đóng vai trò là một nghiên cứu điển hình thiết yếu để tích hợp các dịch vụ AWS quan trọng sau:
+
+1.  **Điện toán Serverless (phi máy chủ):** Chúng tôi sử dụng AWS Lambda làm toàn bộ Backend, loại bỏ chi phí quản lý máy chủ và tối ưu hóa đáng kể chi phí.
+2.  **Triển khai Hiện đại (Lưu trữ Frontend):** Triển khai ứng dụng Next.js trên AWS Amplify cung cấp khả năng lưu trữ và CI/CD hợp lý cho Frontend.
+3.  **Luồng Bất đồng bộ Bền vững (Async):** Chúng tôi đã xây dựng một hệ thống nhắc nhở tự động đáng tin cậy bằng cách sử dụng EventBridge -> Lambda -> SES. Mô hình này đảm bảo việc gửi hàng loạt tin nhắn mạnh mẽ, có khả năng mở rộng mà không làm quá tải API cốt lõi.
+4.  **Tính bền vững của Dữ liệu và Vector:** Chúng tôi quản lý dữ liệu quan hệ phức tạp bên ngoài bằng cách sử dụng NeonDB  đồng thời sử dụng Cơ sở dữ liệu Vector chuyên dụng (Pinecone) cho lớp truy xuất RAG tốc độ cao.
+5.  **Bảo mật và DevOps:** AWS Parameter Store quản lý tất cả các khóa nhạy cảm và toàn bộ cơ sở hạ tầng được triển khai bằng Serverless Framework được điều khiển bởi GitHub Actions (CI/CD).
+
+### Bài học
+
+Người tham dự sẽ học cách triển khai kiến trúc Microservices hoàn toàn Serverless, giải quyết các thách thức như kết nối cơ sở dữ liệu bên ngoài, phân tách khối lượng công việc đồng bộ/bất đồng bộ và xây dựng giải pháp RAG Core tiết kiệm chi phí.
+
+![overview](/images/High_Level_System_Architecture.png)
